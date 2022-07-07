@@ -38,6 +38,11 @@
         "value": "mongodb+srv://acha:acha@cluster0.pjq3j.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
         "required": true
       },
+      "CLEANMODE_MINS": {
+        "description": "hmm",
+        "value": "2",
+        "required": true
+      },
       "MUSIC_BOT_NAME": {
         "description": "A name for your Music Bot. Please don't use ascii characters",
         "value": "Schwi",
