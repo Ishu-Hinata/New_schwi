@@ -23,8 +23,8 @@
         "value": "23ed361f740284b743b45bd9904e19b8",
         "required": true
       },
-      "AUTO_LEAVING_ASSISTANT": {
-        "description": "If you want your assistant to leave all chats automatically after some time.",
+      "AUTO_DOWNLOADS_CLEAR": {
+        "description": "poor db",
         "value": "True",
         "required": false
       },
@@ -41,6 +41,41 @@
       "CLEANMODE_MINS": {
         "description": "hmm",
         "value": "2",
+        "required": true
+      },
+      "TELEGRAM_AUDIO_URL": {
+        "description": "hmm",
+        "value": "https://telegra.ph/file/4493b2aed8165b6a53af0.jpg",
+        "required": true
+      },
+      "TELEGRAM_VIDEO_URL": {
+        "description": "hmm",
+        "value": "https://telegra.ph/file/18418b8b0e311be962b51.jpg",
+        "required": true
+      },
+      "STREAM_IMG_URL": {
+        "description": "hmm",
+        "value": "https://telegra.ph/file/9481daa6a49e7129b43e3.jpg",
+        "required": true
+      },
+      "YOUTUBE_IMG_URL": {
+        "description": "hmm",
+        "value": "https://telegra.ph/file/d2ab20240490271daec89.jpg",
+        "required": true
+      },
+      "SPOTIFY_ARTIST_IMG_URL": {
+        "description": "hmm",
+        "value": "https://telegra.ph/file/e6a47ce2e0764b21b0171.jpg",
+        "required": true
+      },
+      "SPOTIFY_ALBUM_IMG_URL": {
+        "description": "hmm",
+        "value": "https://telegra.ph/file/ec3d94a298ad3ca12d883.jpg",
+        "required": true
+      },
+      "SPOTIFY_PLAYLIST_IMG_URL": {
+        "description": "hmm",
+        "value": "https://telegra.ph/file/c18df7a38316d075e6991.jpg",
         "required": true
       },
       "MUSIC_BOT_NAME": {
