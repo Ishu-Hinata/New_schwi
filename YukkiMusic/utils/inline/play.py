@@ -44,7 +44,7 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
                 text=_["CLOSEMENU_BUTTON"], callback_data="close"
             ),
         ]
-    return buttons
+        return buttons
 
 
 def telegram_markup_timer(_, chat_id, played, dur):
