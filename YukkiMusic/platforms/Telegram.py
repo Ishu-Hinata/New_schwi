@@ -119,7 +119,7 @@ class TeleAPI:
                     [
                         [
                             InlineKeyboardButton(
-                                text="🚦 Cancel Downloading",
+                                text="Cancel Downloading ❓",
                                 callback_data="stop_downloading",
                             ),
                         ]
@@ -138,10 +138,10 @@ class TeleAPI:
                     completed_size = convert_bytes(current)
                     speed = convert_bytes(speed)
                     text = f"""
-**{MUSIC_BOT_NAME} Telegram Media Downloader**
+**Downloading...**
 
-**Total FileSize:** {total_size}
-**Completed:** {completed_size} 
+
+{completed_size} / {total_size}
 **Percentage:** {percentage[:5]}%
 
 **Speed:** {speed}/s
