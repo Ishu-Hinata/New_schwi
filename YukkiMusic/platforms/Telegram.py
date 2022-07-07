@@ -16,6 +16,13 @@ from ..utils.formatters import (convert_bytes, get_readable_time,
 
 downloader = {}
 
+HEART = (
+    "💚",
+    "❤️",
+    "💛",
+    "💙",
+    "🤍",
+)
 
 class TeleAPI:
     def __init__(self):
@@ -163,7 +170,7 @@ class TeleAPI:
                     progress=progress,
                 )
                 await mystic.edit_text(
-                    "Successfully Downloaded.. ⚡⚡"
+                    "❣️"
                 )
                 downloader.pop(message.message_id)
             except:
