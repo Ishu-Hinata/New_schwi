@@ -16,14 +16,6 @@ from ..utils.formatters import (convert_bytes, get_readable_time,
 
 downloader = {}
 
-HEART = (
-    "💚",
-    "❤️",
-    "💛",
-    "💙",
-    "🤍",
-)
-
 class TeleAPI:
     def __init__(self):
         self.chars_limit = 4096
