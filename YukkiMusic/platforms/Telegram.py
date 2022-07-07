@@ -140,12 +140,11 @@ class TeleAPI:
                     text = f"""
 **Downloading...**
 
+📡 {completed_size} / {total_size}
 
-{completed_size} / {total_size}
-**Percentage:** {percentage[:5]}%
-
-**Speed:** {speed}/s
-**ETA:** {eta}"""
+⚡ {speed}/s
+📥 {percentage[:5]}%
+⏳ {eta}"""
                     try:
                         await mystic.edit_text(text, reply_markup=upl)
                     except:
@@ -164,7 +163,7 @@ class TeleAPI:
                     progress=progress,
                 )
                 await mystic.edit_text(
-                    "Successfully Downloaded.. Processing file now"
+                    "Successfully Downloaded.. ⚡⚡"
                 )
                 downloader.pop(message.message_id)
             except:
