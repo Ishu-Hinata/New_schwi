@@ -1,12 +1,5 @@
-#
-# Copyright (C) 2021-2022 by TeamYukki@Github, < https://github.com/TeamYukki >.
-#
-# This file is part of < https://github.com/TeamYukki/YukkiMusicBot > project,
-# and is released under the "GNU v3.0 License Agreement".
-# Please see < https://github.com/TeamYukki/YukkiMusicBot/blob/master/LICENSE >
-#
-# All rights reserved.
-
+import random
+from random import choice
 import asyncio
 
 from pyrogram import filters
@@ -31,6 +24,14 @@ from YukkiMusic.utils.database import (add_served_chat,
 from YukkiMusic.utils.decorators.language import LanguageStart
 from YukkiMusic.utils.inline import (help_pannel, private_panel,
                                      start_pannel)
+
+
+SCHWI = [
+    "https://telegra.ph/file/d2ab20240490271daec89.jpg",
+    "https://telegra.ph/file/4493b2aed8165b6a53af0.jpg",
+    "https://telegra.ph/file/18418b8b0e311be962b51.jpg",
+]
+
 
 loop = asyncio.get_running_loop()
 
@@ -195,8 +196,9 @@ async def start_comm(client, message: Message, _):
         out = private_panel(_, app.username, OWNER)
         if config.START_IMG_URL:
             try:
+                shiro = random.choice(SCHWI)
                 await message.reply_photo(
-                    photo=config.START_IMG_URL,
+                    photo=shiro,
                     caption=_["start_2"].format(
                         config.MUSIC_BOT_NAME
                     ),
