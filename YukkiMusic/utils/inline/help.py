@@ -45,7 +45,7 @@ def help_pannel(_, START: Union[bool, int] = None):
             ],
             [
                 InlineKeyboardButton(
-                    text=_["💚"],
+                    text=_["GREEN"],
                     url=f"https://t.me/C2_Probot",
                 ),
                 InlineKeyboardButton(
@@ -53,7 +53,7 @@ def help_pannel(_, START: Union[bool, int] = None):
                     callback_data="help_callback hb5",
                 ),
                 InlineKeyboardButton(
-                    text=_["💖"],
+                    text=_["PINK"],
                     url=f"https://t.me/Sagiri_izumi_Robot",
                 ),
             ],
