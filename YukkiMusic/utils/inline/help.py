@@ -72,7 +72,7 @@ def help_back_markup(_):
                     callback_data=f"settings_back_helper",
                 ),
                 InlineKeyboardButton(
-                    text=f"Help", url=f"https://t.me/Lord_DSP_3"
+                    text=_["CLOSE_BUTTON"], callback_data=f"close"
                 ),
             ]
         ]
