@@ -13,11 +13,16 @@ def help_pannel(_, START: Union[bool, int] = None):
     ]
     second = [
         InlineKeyboardButton(
+            text=_["GREEN"],
+            url=f"https://t.me/C2_Probot",
+        ),
+        InlineKeyboardButton(
             text=_["BACK_BUTTON"],
             callback_data=f"settingsback_helper",
         ),
         InlineKeyboardButton(
-            text=_["GREEN"], callback_data=f"close"
+            text=_["PINK"],
+            url=f"https://t.me/Sagiri_izumi_Robot",
         ),
     ]
     mark = second if START else first
@@ -45,16 +50,8 @@ def help_pannel(_, START: Union[bool, int] = None):
             ],
             [
                 InlineKeyboardButton(
-                    text=_["GREEN"],
-                    url=f"https://t.me/C2_Probot",
-                ),
-                InlineKeyboardButton(
                     text=_["H_B_6"],
                     callback_data="help_callback hb5",
-                ),
-                InlineKeyboardButton(
-                    text=_["PINK"],
-                    url=f"https://t.me/Sagiri_izumi_Robot",
                 ),
             ],
             mark,
